@@ -1,4 +1,5 @@
-﻿using System;
+﻿using backup10.Logic;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,6 +26,12 @@ namespace backup10
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private void copybutton_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            FileLogic fl = new FileLogic();
+            fl.TestCopyFileAsync();
         }
     }
 }

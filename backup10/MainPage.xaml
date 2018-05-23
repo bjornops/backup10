@@ -8,6 +8,6 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Button x:Name="copybutton" HorizontalAlignment="Center" VerticalAlignment="Center" Tapped="copybutton_Tapped">Copy file!</Button>
     </Grid>
 </Page>
